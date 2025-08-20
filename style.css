@@ -1,0 +1,121 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Base colors */
+:root {
+  --baby-tan: #f7eee2;
+  --baby-pink: #fcd6d6;
+  --accent-pink: #fbbcbc;
+  --white: #ffffff;
+  --text-color: #333333;
+  --heading-color: #2c2c2c;
+}
+
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--baby-tan);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background-color: var(--baby-pink);
+  color: var(--heading-color);
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+nav a {
+  color: var(--heading-color);
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent-pink);
+}
+
+/* Projects Section */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Project */
+article {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+article:hover {
+  transform: translateY(-5px);
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+article h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--heading-color);
+}
+
+article p {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+/* Button/Link Style */
+article a {
+  display: inline-block;
+  background-color: var(--baby-pink);
+  color: var(--heading-color);
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+article a:hover {
+  background-color: var(--accent-pink);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 40px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Reset & Base*
